@@ -1,0 +1,7 @@
+body { font: 18px/1.45 Georgia, serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; background: #f7f4ef; }
+a { color: #0b3d2e; }
+h1 { font-size: 1.8rem; line-height: 1.2; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+td, th { border-top: 1px solid #ccc; text-align: left; padding: 0.4rem 0.3rem 0.4rem 0; vertical-align: top; }
+code { font-size: 0.9em; }
+.note { color: #444; }
