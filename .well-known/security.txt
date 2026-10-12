@@ -1,0 +1,4 @@
+Contact: https://www.linkedin.com/company/wegoforward
+Expires: 2027-10-12T00:00:00Z
+Canonical: https://wegoforward.app/.well-known/security.txt
+Preferred-Languages: en
