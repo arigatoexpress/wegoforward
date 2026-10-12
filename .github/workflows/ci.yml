@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Workshop exercise tests
+        run: node --test workshop/exercise.test.cjs
+
+      - name: Site checks (links, headers, content guards)
+        run: node tools/check-site.mjs
+
+      - name: HTML validation
+        run: npx --yes html-validate@8 "*.html"
