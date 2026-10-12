@@ -1,28 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>x402 — WeGoForward</title>
+  <title>x402, for someone who already has buyers — WeGoForward</title>
+  <meta name="description" content="A private HTTP 402 payment demo against your URL and your test wallet, for a product people already pay for.">
+  <link rel="canonical" href="https://wegoforward.app/x402.html">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf8f3">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f130f">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WeGoForward">
+  <meta property="og:title" content="x402, for someone who already has buyers — WeGoForward">
+  <meta property="og:description" content="A private HTTP 402 payment demo against your URL and your test wallet, for a product people already pay for.">
+  <meta property="og:url" content="https://wegoforward.app/x402.html">
+  <meta property="og:image" content="https://wegoforward.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="site.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <p class="note"><a href="index.html">WeGoForward</a>. Not Texas Home Outlet.</p>
-  <h1>x402, for someone who already has buyers</h1>
-  <p>For a merchant or a team that wants HTTP 402 on a product people already pay for. Not for opening a new shop on the protocol.</p>
-  <h2>You leave with</h2>
-  <ul>
-    <li>A private demo: a request that answers only after a test payment, settled in a test facilitator, with the receipt saved.</li>
-    <li>One page on the organic market as of 2026-10-01: 91 businesses clearing the organic bar, median seller $0.01, paying agents about zero. Source: <a href="https://x402stats.io/reports/2026-10">State of x402, October 2026</a>.</li>
-    <li>A list of what this demo is not: your wallet, your buyers, your mainnet.</li>
-  </ul>
-  <h2>You do not get</h2>
-  <p>A public endpoint, a token, or a promise of agent traffic. No open bounty with a posted purse was found. <a href="https://x402.org/get-involved/">Get involved</a> is Slack, GitHub, and working groups.</p>
-  <h2>Shape</h2>
-  <p>A scoped build against your URL and your test wallet. Your keys stay yours.</p>
-  <h2>Price</h2>
-  <p>Not set. No work starts without a written scope and a contract.</p>
-  <h2>Next</h2>
-  <p>Send the URL you want to charge for, and confirm you already have a buyer who is not an agent you just made.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="WeGoForward — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect class="bm-tile" width="32" height="32" rx="7"/>
+          <path class="bm-glyph" d="M8 24 v-6 h6 v-6 h6 V6.5"/>
+          <path class="bm-glyph" d="M15.6 10.8 L20 6.5 L24.4 10.8"/>
+        </svg>
+        <span>WeGoForward</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/#services">Services</a>
+        <a href="/#approach">Approach</a>
+        <a class="nav-icon-link" href="https://www.linkedin.com/company/wegoforward" target="_blank" rel="noopener noreferrer" aria-label="WeGoForward on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Theme: system default. Switch to light mode.">
+          <svg class="icon-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <div class="container">
+        <a class="back-link" href="/#services">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+          All services
+        </a>
+        <p class="eyebrow">Service 04 — Payments protocol</p>
+        <h1>x402, for someone who already has buyers</h1>
+        <p class="lede">For a merchant or a team that wants HTTP 402 on a product people already pay for. Not for opening a new shop on the protocol.</p>
+      </div>
+    </div>
+
+    <div class="container article-body prose">
+      <section aria-labelledby="leave-with">
+        <h2 id="leave-with">You leave with</h2>
+        <ul class="tick-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg>
+            <span>A private demo: a request that answers only after a test payment, settled in a test facilitator, with the receipt saved.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg>
+            <span>One page on the organic market as of 2026-10-01: 91 businesses clearing the organic bar, median seller $0.01, paying agents about zero. Source: <a href="https://x402stats.io/reports/2026-10" rel="noopener noreferrer">State of x402, October 2026</a>.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12.5l5 5L20 6.5"/></svg>
+            <span>A list of what this demo is not: your wallet, your buyers, your mainnet.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="not-get">
+        <h2 id="not-get">You do not get</h2>
+        <ul class="cross-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            <span>A public endpoint, a token, or a promise of agent traffic. No open bounty with a posted purse was found. <a href="https://x402.org/get-involved/" rel="noopener noreferrer">Get involved</a> is Slack, GitHub, and working groups.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="shape">
+        <h2 id="shape">Shape</h2>
+        <p>A scoped build against your URL and your test wallet. Your keys stay yours.</p>
+      </section>
+
+      <section aria-labelledby="price">
+        <h2 id="price">Price</h2>
+        <div class="price-card">
+          <p>Not set. No work starts without a written scope and a contract.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="next">
+        <h2 id="next">Next</h2>
+        <div class="next-card">
+          <p>Send the URL you want to charge for, and confirm you already have a buyer who is not an agent you just made. LinkedIn is the way in.</p>
+          <a class="btn btn-primary" href="https://www.linkedin.com/company/wegoforward" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            Contact on LinkedIn
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="/" aria-label="WeGoForward — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect class="bm-tile" width="32" height="32" rx="7"/>
+          <path class="bm-glyph" d="M8 24 v-6 h6 v-6 h6 V6.5"/>
+          <path class="bm-glyph" d="M15.6 10.8 L20 6.5 L24.4 10.8"/>
+        </svg>
+        <span>WeGoForward</span>
+      </a>
+      <nav class="footer-nav-wrap" aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="workshop.html">Half day</a></li>
+            <li><a href="one-workflow.html">One workflow</a></li>
+            <li><a href="sourced-brief.html">Sourced brief</a></li>
+            <li><a href="x402.html" aria-current="page">x402</a></li>
+            <li><a href="answers.html">Answers</a></li>
+            <li><a href="https://www.linkedin.com/company/wegoforward" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href=".well-known/security.txt">security.txt</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© 2026 WeGoForward — AI and automation that stops where it should.</p>
+    </div>
+  </footer>
 </body>
 </html>

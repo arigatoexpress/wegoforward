@@ -1,22 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WeGoForward</title>
+  <title>WeGoForward — AI &amp; automation studio</title>
+  <meta name="description" content="WeGoForward builds small, well-scoped AI and automation projects. Every build drafts for a person to review, stops where it should, and ships with a one-page receipt.">
+  <link rel="canonical" href="https://wegoforward.app/">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf8f3">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f130f">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WeGoForward">
+  <meta property="og:title" content="WeGoForward — AI &amp; automation studio">
+  <meta property="og:description" content="Small, well-scoped AI and automation projects. Every build drafts for a person to review, stops where it should, and ships with a one-page receipt.">
+  <meta property="og:url" content="https://wegoforward.app/">
+  <meta property="og:image" content="https://wegoforward.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="site.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <p class="note">WeGoForward. Not Texas Home Outlet.</p>
-  <h1>Work you can hand to someone.</h1>
-  <p>Five pages. A price appears only where one has been approved. Nothing here is an invoice, and nothing has been sent.</p>
-  <ul>
-    <li><a href="workshop.html">Half day: build an agent that stops</a></li>
-    <li><a href="one-workflow.html">One workflow, one week</a></li>
-    <li><a href="sourced-brief.html">Sourced brief, or twenty cases</a></li>
-    <li><a href="x402.html">x402, for someone who already has buyers</a></li>
-    <li><a href="answers.html">Website answers and follow-up</a></li>
-  </ul>
-  <p class="note">wegoforward.app is not registered yet. This is the page until that name exists.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="WeGoForward — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect class="bm-tile" width="32" height="32" rx="7"/>
+          <path class="bm-glyph" d="M8 24 v-6 h6 v-6 h6 V6.5"/>
+          <path class="bm-glyph" d="M15.6 10.8 L20 6.5 L24.4 10.8"/>
+        </svg>
+        <span>WeGoForward</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a class="nav-icon-link" href="https://www.linkedin.com/company/wegoforward" target="_blank" rel="noopener noreferrer" aria-label="WeGoForward on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Theme: system default. Switch to light mode.">
+          <svg class="icon-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow" data-reveal>WeGoForward — AI &amp; automation studio</p>
+        <h1 data-reveal>Work you can hand to someone.</h1>
+        <p class="lede" data-reveal>Small, well-scoped AI and automation projects for teams that want AI on real work. Every build drafts for a person to review, stops where it should, and leaves a one-page receipt: what it reads, what it writes, and what it is forbidden to do.</p>
+        <div class="hero-actions" data-reveal>
+          <a class="btn btn-primary" href="#services">
+            See the services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/company/wegoforward" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            Contact on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Services</p>
+          <h2 id="services-heading">Five offers, each scoped to finish.</h2>
+          <p>A price appears only where one has been approved. Where no price is set, the number is a separate yes. Nothing here is an invoice.</p>
+        </div>
+        <ul class="card-grid">
+          <li data-reveal>
+            <a class="card" href="workshop.html">
+              <span class="card-index">01</span>
+              <h3>Half day: build an agent that stops</h3>
+              <p>A working session for a team about to let AI send, spend, or post. One job written down, a working exercise, and the one security rule.</p>
+              <span class="card-cta">About the half day
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </a>
+          </li>
+          <li data-reveal>
+            <a class="card" href="one-workflow.html">
+              <span class="card-index">02</span>
+              <h3>One workflow, one week</h3>
+              <p>One owner, one job, five days. Done when a person can run it without you — with a receipt of what it reads, writes, and may not do.</p>
+              <span class="card-cta">About the week
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </a>
+          </li>
+          <li data-reveal>
+            <a class="card" href="sourced-brief.html">
+              <span class="card-index">03</span>
+              <h3>Sourced brief, or twenty cases</h3>
+              <p>The claim you are about to make, checked against its sources — or twenty of your agent's cases, read one by one.</p>
+              <span class="card-cta">About the brief
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </a>
+          </li>
+          <li data-reveal>
+            <a class="card" href="x402.html">
+              <span class="card-index">04</span>
+              <h3>x402, for someone who already has buyers</h3>
+              <p>A private HTTP 402 payment demo against your URL and your test wallet, for a product people already pay for. Your keys stay yours.</p>
+              <span class="card-cta">About the demo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </a>
+          </li>
+          <li data-reveal>
+            <a class="card" href="answers.html">
+              <span class="card-index">05</span>
+              <h3>Website answers and follow-up</h3>
+              <p>Approved answers to the questions your shop gets twice. Anything unknown goes to a person. The one offer with set prices.</p>
+              <span class="card-cta">About the tiers
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="approach" aria-labelledby="approach-heading">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Approach</p>
+          <h2 id="approach-heading">Careful on purpose.</h2>
+          <p>The point is not to automate the most. It is to hand over work that stays handed over.</p>
+        </div>
+        <ul class="principles">
+          <li class="principle" data-reveal>
+            <span class="principle-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </span>
+            <h3>If it can send, it is not done.</h3>
+            <p>Every build stops at a draft. A person presses send, spends, or posts — never the agent on its own.</p>
+          </li>
+          <li class="principle" data-reveal>
+            <span class="principle-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+            </span>
+            <h3>Scope in writing, first.</h3>
+            <p>Day one is the scope, in writing. No scope, no build. If it takes more than one sentence, it is two jobs.</p>
+          </li>
+          <li class="principle" data-reveal>
+            <span class="principle-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21z"/><path d="M9.5 8h5M9.5 12h5"/></svg>
+            </span>
+            <h3>A one-page receipt.</h3>
+            <p>What it read, what it wrote, and what it is forbidden to do. You keep the page.</p>
+          </li>
+          <li class="principle" data-reveal>
+            <span class="principle-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.6 13.4L13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>
+            </span>
+            <h3>Prices are approved before they appear.</h3>
+            <p>Market ranges are labeled as other people's ads, not this invoice. A price shows up only once it is approved.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-band" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Contact</p>
+        <h2 id="contact-heading" data-reveal>Start with one sentence.</h2>
+        <p data-reveal>Name the workflow you want off your desk. LinkedIn is the only inbox — no forms, no newsletter, and nothing on this page is automated.</p>
+        <div class="hero-actions" data-reveal>
+          <a class="btn btn-primary" href="https://www.linkedin.com/company/wegoforward" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            Contact on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="/" aria-label="WeGoForward — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect class="bm-tile" width="32" height="32" rx="7"/>
+          <path class="bm-glyph" d="M8 24 v-6 h6 v-6 h6 V6.5"/>
+          <path class="bm-glyph" d="M15.6 10.8 L20 6.5 L24.4 10.8"/>
+        </svg>
+        <span>WeGoForward</span>
+      </a>
+      <nav class="footer-nav-wrap" aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="workshop.html">Half day</a></li>
+            <li><a href="one-workflow.html">One workflow</a></li>
+            <li><a href="sourced-brief.html">Sourced brief</a></li>
+            <li><a href="x402.html">x402</a></li>
+            <li><a href="answers.html">Answers</a></li>
+            <li><a href="https://www.linkedin.com/company/wegoforward" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href=".well-known/security.txt">security.txt</a></li>
+        </ul>
+      </nav>
+      <p class="footer-note">© 2026 WeGoForward — AI and automation that stops where it should.</p>
+    </div>
+  </footer>
 </body>
 </html>
