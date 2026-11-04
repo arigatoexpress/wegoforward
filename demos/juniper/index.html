@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Juniper Workshop fictional demo | WeGoForward</title>
+  <meta name="description" content="Fictional Juniper Workshop demo. Three set answers and an unsent follow-up draft stay in this browser tab. Nothing is sent or booked.">
+  <link rel="canonical" href="https://wegoforward.app/demos/juniper/">
+  <meta property="og:title" content="Juniper Workshop fictional demo | WeGoForward">
+  <meta property="og:description" content="Fictional Juniper Workshop demo. Three set answers and an unsent follow-up draft stay in this browser tab. Nothing is sent or booked.">
+  <meta property="og:url" content="https://wegoforward.app/demos/juniper/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WeGoForward">
+  <meta property="og:image" content="https://wegoforward.app/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Juniper Workshop fictional demo | WeGoForward">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="core.js"></script>
+  <script defer src="ui.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://wegoforward.app/demos/juniper/#webpage",
+        "url": "https://wegoforward.app/demos/juniper/",
+        "name": "Juniper Workshop fictional demo | WeGoForward",
+        "description": "Fictional Juniper Workshop demo. Three set answers and an unsent follow-up draft stay in this browser tab. Nothing is sent or booked.",
+        "isPartOf": {
+          "@id": "https://wegoforward.app/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://wegoforward.app/demos/juniper/#breadcrumb"
+        },
+        "publisher": {
+          "@id": "https://wegoforward.app/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://wegoforward.app/demos/juniper/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://wegoforward.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Demos",
+            "item": "https://wegoforward.app/demos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Juniper Workshop fictional demo",
+            "item": "https://wegoforward.app/demos/juniper/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header><strong>Juniper Workshop</strong><span>Fictional business · Local demonstration</span></header>
+  <main>
+    <section class="intro"><h1>A question.<br>A careful handoff.</h1><p>Try three sample FAQs, then prepare a follow-up for a person to review. Use made-up information only.</p><p class="notice">Nothing is sent or booked. Entries live only in this tab and disappear on reset or reload.</p></section>
+    <div class="workspace">
+      <section aria-labelledby="question-heading">
+        <h2 id="question-heading">Ask the workshop</h2>
+        <div class="examples" aria-label="Sample questions">
+          <button type="button" data-question="What are your hours?">Hours</button>
+          <button type="button" data-question="What do you repair?">Repairs</button>
+          <button type="button" data-question="How do I book?">Booking</button>
+        </div>
+        <label for="question">Your fictional question</label>
+        <textarea id="question" maxlength="1000" rows="4" placeholder="Can you repair a telescope?" aria-describedby="question-error"></textarea>
+        <p id="question-error" class="error" hidden></p>
+        <button id="answer" type="button">Check the FAQ</button>
+        <p id="reply" role="status">Choose a sample or write a question. Only the three exact sample questions have prepared answers.</p>
+        <label for="email">Fictional contact email</label>
+        <input id="email" type="email" maxlength="254" autocomplete="off" spellcheck="false" placeholder="ada@example.test" aria-describedby="email-help email-error">
+        <p id="email-help" class="hint">You supply this address. The demo cannot verify that it exists or belongs to you.</p>
+        <p id="email-error" class="error" hidden></p>
+        <button id="capture" type="button">Prepare unsent draft</button>
+        <p id="status" role="status">No enquiries prepared.</p>
+      </section>
+      <section class="draft" aria-labelledby="draft-heading">
+        <div class="draft-title"><h2 id="draft-heading">Review desk</h2><span>Unsent</span></div>
+        <pre id="draft">Your draft will appear here.
+
+A person would review the question and approve any real reply.</pre>
+        <p class="booking">Booking handoff<br><strong>In a real setup the business's own booking link would appear here.</strong></p>
+        <p class="hint">No booking link is active. Reusing the same email keeps the first draft; reset to try another enquiry.</p>
+      </section>
+    </div>
+    <footer><p>This is a set-answer fixture, not an AI service, selected market or customer pilot. <a href="/demos/">All fictional demos</a></p><button id="reset" type="button" class="secondary">Reset demo</button></footer>
+  </main>
+  <noscript>This demonstration needs JavaScript for local interaction.</noscript>
+</body>
+</html>
