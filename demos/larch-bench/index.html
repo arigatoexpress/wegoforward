@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Larch Bench Appliance Repair fictional demo | WeGoForward</title>
+  <meta name="description" content="Fictional Larch Bench Appliance Repair demo. Parts-arrived and ready-for-pickup drafts stay unsent in this browser tab. Nothing is sent, booked, or texted.">
+  <link rel="canonical" href="https://wegoforward.app/demos/larch-bench/">
+  <meta property="og:title" content="Larch Bench Appliance Repair fictional demo | WeGoForward">
+  <meta property="og:description" content="Fictional Larch Bench Appliance Repair demo. Parts-arrived and ready-for-pickup drafts stay unsent in this browser tab. Nothing is sent, booked, or texted.">
+  <meta property="og:url" content="https://wegoforward.app/demos/larch-bench/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WeGoForward">
+  <meta property="og:image" content="https://wegoforward.app/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Larch Bench Appliance Repair fictional demo | WeGoForward">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="core.js"></script>
+  <script defer src="ui.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://wegoforward.app/demos/larch-bench/#webpage",
+        "url": "https://wegoforward.app/demos/larch-bench/",
+        "name": "Larch Bench Appliance Repair fictional demo | WeGoForward",
+        "description": "Fictional Larch Bench Appliance Repair demo. Parts-arrived and ready-for-pickup drafts stay unsent in this browser tab. Nothing is sent, booked, or texted.",
+        "isPartOf": {
+          "@id": "https://wegoforward.app/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://wegoforward.app/demos/larch-bench/#breadcrumb"
+        },
+        "publisher": {
+          "@id": "https://wegoforward.app/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://wegoforward.app/demos/larch-bench/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://wegoforward.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Demos",
+            "item": "https://wegoforward.app/demos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Larch Bench Appliance Repair fictional demo",
+            "item": "https://wegoforward.app/demos/larch-bench/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header><strong>Larch Bench Appliance Repair</strong><span>Fictional business · Local demonstration · Demo #4 (repair status)</span></header>
+  <main>
+    <section class="intro"><h1>Parts on the bench.<br>An unsent status draft.</h1><p>Mark a fictional ticket parts-arrived or ready-for-pickup and prepare an unsent draft. Distinct from Demo #3 (Ridge Bolt lead follow-up) and from the FAQ capture demos.</p><p class="notice">Nothing is sent, booked, or texted. The sender name, business name and reply-to address are filled in during a real setup. Entries live only in this tab. This demo states no price.</p></section>
+    <div class="workspace">
+      <section aria-labelledby="ticket-heading">
+        <h2 id="ticket-heading">Bench desk</h2>
+        <div class="examples" aria-label="Sample tickets">
+          <button type="button" data-sample='{"customerName":"Ada Example","email":"ada@example.test","ticketId":"LB-1001","item":"Fictional dishwasher pump","note":"Part is on the bench. Not installed yet.","statusId":"parts_arrived"}'>Parts arrived</button>
+          <button type="button" data-sample='{"customerName":"Blake Example","email":"blake@example.test","ticketId":"LB-1002","item":"Fictional dryer belt","note":"Belt replaced. Ready for pickup during fictional open hours.","statusId":"ready_for_pickup"}'>Ready for pickup</button>
+        </div>
+        <label for="customerName">Fictional customer name</label>
+        <input id="customerName" maxlength="80" autocomplete="off" spellcheck="false" placeholder="Ada Example" aria-describedby="customerName-error">
+        <p id="customerName-error" class="error" hidden></p>
+        <label for="email">Fictional contact email</label>
+        <input id="email" type="email" maxlength="254" autocomplete="off" spellcheck="false" placeholder="ada@example.test" aria-describedby="email-error">
+        <p id="email-error" class="error" hidden></p>
+        <label for="ticketId">Fictional ticket</label>
+        <input id="ticketId" maxlength="7" autocomplete="off" spellcheck="false" placeholder="LB-1001" aria-describedby="ticketId-error">
+        <p id="ticketId-error" class="error" hidden></p>
+        <label for="item">Appliance on the ticket</label>
+        <input id="item" maxlength="120" autocomplete="off" spellcheck="false" placeholder="Fictional dishwasher pump" aria-describedby="item-error">
+        <p id="item-error" class="error" hidden></p>
+        <label for="note">Bench note</label>
+        <textarea id="note" maxlength="500" rows="3" placeholder="Part is on the bench." aria-describedby="note-error"></textarea>
+        <p id="note-error" class="error" hidden></p>
+        <label for="statusId">Status to draft</label>
+        <select id="statusId" aria-describedby="statusId-error">
+          <option value="">Choose a status…</option>
+          <option value="parts_arrived">Parts arrived</option>
+          <option value="ready_for_pickup">Ready for pickup</option>
+        </select>
+        <p id="statusId-error" class="error" hidden></p>
+        <button id="prepare" type="button">Prepare unsent status draft</button>
+        <p id="status" role="status">No status drafts prepared.</p>
+      </section>
+      <section class="draft" aria-labelledby="draft-heading">
+        <div class="draft-title"><h2 id="draft-heading">Status draft</h2><span>Unsent</span></div>
+        <pre id="draft">Your status draft will appear here.
+
+A person would approve any real message. Nothing is sent from this page.</pre>
+        <p class="booking">Sender identity<br><strong>The sender name, business name and reply-to address are filled in during a real setup.</strong></p>
+        <p class="hint">Approved prices live elsewhere on main. This demo does not quote prices.</p>
+      </section>
+    </div>
+    <section class="timeline" aria-labelledby="timeline-heading">
+      <h2 id="timeline-heading">Ticket replay</h2>
+      <p class="hint">Synthetic tickets only. A draft is prepared about one hour after the bench mark, and moves to the next fictional open morning (Monday–Friday, 8am–5pm) if that hour is closed. A fictional opt-out or picked-up note prepares no draft. Nothing is texted.</p>
+      <div class="examples" aria-label="Synthetic ticket replays">
+        <button type="button" data-fixture="parts_arrived">Parts arrived</button>
+        <button type="button" data-fixture="ready_for_pickup">Ready for pickup</button>
+        <button type="button" data-fixture="after_close">After close</button>
+        <button type="button" data-fixture="opt_out">Customer opted out</button>
+        <button type="button" data-fixture="picked_up">Already picked up</button>
+      </div>
+      <p id="timeline-status" role="status">Choose a synthetic ticket. Drafts stay unsent.</p>
+      <pre id="timeline">A synthetic ticket replay will appear here.
+
+Nothing is sent from this page.</pre>
+    </section>
+    <footer><p>Demo #4 offline fixture for the independent repair-workshop niche (repair-status drafts). Not a sold identity. Not outreach. Nothing sent. <a href="/demos/">All fictional demos</a></p><button id="reset" type="button" class="secondary">Reset demo</button></footer>
+  </main>
+  <noscript>This demonstration needs JavaScript for local interaction.</noscript>
+</body>
+</html>

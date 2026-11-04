@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Ridge Bolt Small Engine fictional demo | WeGoForward</title>
+  <meta name="description" content="Fictional Ridge Bolt Small Engine demo. Timed follow-up drafts stay unsent in this browser tab. Nothing is sent, booked, or texted.">
+  <link rel="canonical" href="https://wegoforward.app/demos/ridge-bolt/">
+  <meta property="og:title" content="Ridge Bolt Small Engine fictional demo | WeGoForward">
+  <meta property="og:description" content="Fictional Ridge Bolt Small Engine demo. Timed follow-up drafts stay unsent in this browser tab. Nothing is sent, booked, or texted.">
+  <meta property="og:url" content="https://wegoforward.app/demos/ridge-bolt/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WeGoForward">
+  <meta property="og:image" content="https://wegoforward.app/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ridge Bolt Small Engine fictional demo | WeGoForward">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="core.js"></script>
+  <script defer src="ui.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://wegoforward.app/demos/ridge-bolt/#webpage",
+        "url": "https://wegoforward.app/demos/ridge-bolt/",
+        "name": "Ridge Bolt Small Engine fictional demo | WeGoForward",
+        "description": "Fictional Ridge Bolt Small Engine demo. Timed follow-up drafts stay unsent in this browser tab. Nothing is sent, booked, or texted.",
+        "isPartOf": {
+          "@id": "https://wegoforward.app/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://wegoforward.app/demos/ridge-bolt/#breadcrumb"
+        },
+        "publisher": {
+          "@id": "https://wegoforward.app/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://wegoforward.app/demos/ridge-bolt/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://wegoforward.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Demos",
+            "item": "https://wegoforward.app/demos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ridge Bolt Small Engine fictional demo",
+            "item": "https://wegoforward.app/demos/ridge-bolt/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header><strong>Ridge Bolt Small Engine</strong><span>Fictional business · Local demonstration · Demo #3 (lead follow-up)</span></header>
+  <main>
+    <section class="intro"><h1>An after-hours note.<br>A timed follow-up draft.</h1><p>Load a fictional repair-shop enquiry, pick when a person would follow up, and prepare an unsent draft. Or replay a synthetic lead to see the acknowledgement, quote nudge, and last check-in. Distinct from the FAQ capture demos (Juniper, Cedar Latch, after-hours desk).</p><p class="notice">Nothing is sent, booked, or texted. The sender name, business name and reply-to address are filled in during a real setup. Entries live only in this tab.</p></section>
+    <div class="workspace">
+      <section aria-labelledby="enquiry-heading">
+        <h2 id="enquiry-heading">Review desk</h2>
+        <div class="examples" aria-label="Sample enquiries">
+          <button type="button" data-sample='{"customerName":"Ada Example","email":"ada@example.test","enquiry":"Can you look at a stuck lawnmower pull cord after hours?","windowId":"next_open"}'>Mower cord</button>
+          <button type="button" data-sample='{"customerName":"Blake Example","email":"blake@example.test","enquiry":"Need a quote on chainsaw sharpening before the weekend.","windowId":"same_day"}'>Chainsaw</button>
+          <button type="button" data-sample='{"customerName":"Casey Example","email":"casey@example.test","enquiry":"Generator will not start after sitting all winter.","windowId":"two_day"}'>Generator</button>
+        </div>
+        <label for="customerName">Fictional customer name</label>
+        <input id="customerName" maxlength="80" autocomplete="off" spellcheck="false" placeholder="Ada Example" aria-describedby="customerName-error">
+        <p id="customerName-error" class="error" hidden></p>
+        <label for="email">Fictional contact email</label>
+        <input id="email" type="email" maxlength="254" autocomplete="off" spellcheck="false" placeholder="ada@example.test" aria-describedby="email-help email-error">
+        <p id="email-help" class="hint">You supply this address. The demo cannot verify that it exists.</p>
+        <p id="email-error" class="error" hidden></p>
+        <label for="enquiry">Original enquiry (from after-hours capture)</label>
+        <textarea id="enquiry" maxlength="1000" rows="4" placeholder="Can you look at a stuck lawnmower pull cord?" aria-describedby="enquiry-error"></textarea>
+        <p id="enquiry-error" class="error" hidden></p>
+        <label for="windowId">Follow-up window</label>
+        <select id="windowId" aria-describedby="windowId-error">
+          <option value="">Choose a window…</option>
+          <option value="same_day">Same-day close-of-business</option>
+          <option value="next_open">Next open morning</option>
+          <option value="two_day">Two business days</option>
+        </select>
+        <p id="windowId-error" class="error" hidden></p>
+        <button id="prepare" type="button">Prepare unsent follow-up</button>
+        <p id="status" role="status">No follow-ups prepared.</p>
+      </section>
+      <section class="draft" aria-labelledby="draft-heading">
+        <div class="draft-title"><h2 id="draft-heading">Follow-up draft</h2><span>Unsent</span></div>
+        <pre id="draft">Your follow-up draft will appear here.
+
+A person would approve any real reply. Nothing is sent from this page.</pre>
+        <p class="booking">Sender identity<br><strong>The sender name, business name and reply-to address are filled in during a real setup.</strong></p>
+        <p class="hint">Approved prices live elsewhere on main. This demo does not quote prices. Reset to try another enquiry.</p>
+      </section>
+    </div>
+    <section class="timeline" aria-labelledby="timeline-heading">
+      <h2 id="timeline-heading">Lead timeline replay</h2>
+      <p class="hint">Synthetic leads only. The schedule prepares at most three unsent drafts: about one hour after the enquiry, two days later, and seven days later. A reply, a booking, or the customer opting out clears any draft scheduled at or after that moment. Quiet hours move a draft to the next fictional open morning (Monday–Friday, 8am–5pm).</p>
+      <div class="examples" aria-label="Synthetic lead timelines">
+        <button type="button" data-timeline="quiet">Gone quiet</button>
+        <button type="button" data-timeline="replied">Customer replied</button>
+        <button type="button" data-timeline="booked">Booked</button>
+        <button type="button" data-timeline="opt_out">Customer opted out</button>
+        <button type="button" data-timeline="after_close">After close</button>
+      </div>
+      <p class="hint">Demo only: nothing is texted.</p>
+      <p id="timeline-status" role="status">Choose a synthetic timeline. Drafts stay unsent.</p>
+      <pre id="timeline">A synthetic lead timeline will appear here.
+
+Nothing is sent from this page.</pre>
+    </section>
+    <footer><p>Demo #3 offline fixture for the independent repair-workshop niche (lead follow-up). Not a sold identity. Not outreach. Nothing sent. <a href="/demos/">All fictional demos</a></p><button id="reset" type="button" class="secondary">Reset demo</button></footer>
+  </main>
+  <noscript>This demonstration needs JavaScript for local interaction.</noscript>
+</body>
+</html>
