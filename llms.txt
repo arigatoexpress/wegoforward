@@ -1,0 +1,36 @@
+# WeGoForward
+
+> WeGoForward sets up a website assistant for independent repair shops. It answers approved questions and drafts follow-up for a person to send. Gunnison Valley, Colorado.
+
+## Services
+
+- [Website answers](https://wegoforward.app/services): $495 setup + $99/month. About 15 approved questions for an independent repair shop. Anything else goes to a person. One update a month. It never sends, books, or spends on its own. Records stay in your accounts. Questions go to the AI provider named in your quote.
+- [Lead follow-up](https://wegoforward.app/services): $995 setup + $249/month. Website answers, plus the enquiry lands in your sheet or inbox and a draft waits for a person to send it. A weekly note on what came in.
+
+## Pricing
+
+- [Website answers](https://wegoforward.app/pricing): $495 setup + $99/month. About 15 approved questions. Hands everything else to a person. One update a month. Records stay in your accounts; questions go to the AI provider named in your quote.
+- [Lead follow-up](https://wegoforward.app/pricing): $995 setup + $249/month. Everything in website answers, plus follow-up. Leads saved to your own sheet or inbox. Draft replies a person sends. Weekly note on what came in.
+- [Pricing](https://wegoforward.app/pricing): Website answers is $495 setup + $99/month. Lead follow-up is $995 setup + $249/month. These two prices are starting points. A written quote finalizes the scope and the price before any work. Payment terms are set out in that quote. This page lists no other price and no intro discount.
+
+## Contact
+
+- [Contact](https://wegoforward.app/contact): Book a free 20-minute call about the repair-shop website assistant. Tell me how your shop handles questions and follow-up. Send your name, shop, email, and a question. A reply window is not published on this page yet. LinkedIn is there if the form cannot send. There is no newsletter. Local to the Gunnison Valley or Crested Butte? I am happy to meet in person. What not to send: passwords, Social Security numbers or account numbers. I will never ask for them by message.
+
+## Pages
+
+- [Home](https://wegoforward.app/): A website assistant that answers, then waits. WeGoForward sets up one assistant for an independent repair shop. It answers the questions you approve and drafts follow-up for a person to send. It never sends, books, or spends on its own. Book a free 20-minute call. Based in the Gunnison Valley, Colorado. This site sets no cookies and has no ads. The contact page has one short form. Cloudflare counts visits without cookies. WeGoForward is not a law firm, accounting firm or insurer, and nothing here is legal advice.
+- [Website assistant](https://wegoforward.app/services): One assistant for a repair shop. Website answers is $495 setup + $99/month. Lead follow-up is $995 setup + $249/month.
+- [Pricing](https://wegoforward.app/pricing): Two ways to start: $495 setup + $99/month, or $995 setup + $249/month. These two prices are starting points. A written quote finalizes the scope and the price.
+- [Case study](https://wegoforward.app/case-study): An example scenario, not a client result. It describes pieces a shop system can include. No testimonial, revenue figure, or promise that the site stays up.
+- [Approach](https://wegoforward.app/approach): How I work. Plain English, accounts you control, and the two starting prices. A written quote finalizes the scope and the price.
+- [Labs](https://wegoforward.app/labs): Agents and Crypto Lab.
+- [About](https://wegoforward.app/about)
+- [Free security checklist](https://wegoforward.app/checklist)
+- [Contact](https://wegoforward.app/contact): Book a free 20-minute call.
+- [Privacy](https://wegoforward.app/privacy)
+- [Terms](https://wegoforward.app/terms): Terms of service for this website. Paid work starts only after a written quote. Cancellation, refunds, and payment timing are in that quote, not on this page.
+- [Fictional offline demos](https://wegoforward.app/demos/): These three pages are fictional repair-shop fixtures. They run in your browser from this site. Nothing is sent, booked, or texted.
+- [Juniper Workshop](https://wegoforward.app/demos/juniper/): A fictional workshop answers three set questions, then prepares an unsent follow-up for a person to review.
+- [Ridge Bolt Small Engine](https://wegoforward.app/demos/ridge-bolt/): A fictional small-engine shop prepares timed follow-up drafts. Every draft stays unsent until a person would decide.
+- [Larch Bench Appliance Repair](https://wegoforward.app/demos/larch-bench/): A fictional appliance repair shop prepares unsent parts-arrived and ready-for-pickup drafts. Nothing is texted.

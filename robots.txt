@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wegoforward.app/sitemap.xml
